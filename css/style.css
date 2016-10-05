@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.content {
+	margin: 20px auto 0;
+	width: 800px;
+	text-align: center;
+}
+
+.content-sentence {
+	background-color: #eee;
+	border-radius: 4px;
+	width: 780px;
+}
+
+.main-sentence {
+	padding: 20px;
+	text-align: left;
+	display: none;
+	min-height: 410px;
+	overflow: hidden;
+}
