@@ -1,14 +1,13 @@
 var i = 1;
 var pageIndex = $('.main-sentence').length;
-$('#page' + i).show();
 $('#previous').prop('disabled', true);
-
+$('.main-sentence:nth-child(1)').show();
 
 $('#next').on('click', function(){
 		i++;
 		$('#previous').prop('disabled', false);
 		if( i <= pageIndex ){
-			var nextPage = $('#page' + i).show();
+			var nextPage = $('.main-sentence:nth-child(' + i + ')').show();
 			$(nextPage).prev().hide();
 		}
 		if( i == pageIndex ){
@@ -20,7 +19,7 @@ $('#next').on('click', function(){
 
 $('#previous').on('click', function(){
 		i--;
-		var prevPage = $('#page' + i).show();
+		var prevPage = $('.main-sentence:nth-child(' + i + ')').show();
 		$(prevPage).next().hide();
 		$('#next').prop('disabled', false);
 
