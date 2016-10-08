@@ -19,3 +19,7 @@
 	min-height: 410px;
 	overflow: hidden;
 }
+
+.main-sentence > p {
+	line-height: 2;
+}
