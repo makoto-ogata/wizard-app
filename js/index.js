@@ -1,3 +1,7 @@
+
+
+
+/*
 var i = 1;
 var pageIndex = $('.main-sentence').length;
 $('#previous').prop('disabled', true);
@@ -27,4 +31,4 @@ $('#previous').on('click', function(){
 			$('#previous').prop('disabled', true);
 		}
 });
-
+*/
