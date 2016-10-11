@@ -1,6 +1,7 @@
 function pageAction (){
 	var i = 1;
 	var pageIndex = $('.main-sentence').length;
+	$('.page-number').text(i + '/' + pageIndex);
 	$('#previous').prop('disabled', true);
 	$('.main-sentence:nth-child(1)').show();
 
@@ -10,6 +11,7 @@ function pageAction (){
 			if( i <= pageIndex ){
 				var nextPage = $('.main-sentence:nth-child(' + i + ')').show();
 				$(nextPage).prev().hide();
+				$('.page-number').text(i + '/' + pageIndex);
 			}
 			if( i == pageIndex ){
 				$('#next').prop('disabled', true);
@@ -23,6 +25,7 @@ function pageAction (){
 			var prevPage = $('.main-sentence:nth-child(' + i + ')').show();
 			$(prevPage).next().hide();
 			$('#next').prop('disabled', false);
+			$('.page-number').text(i + '/' + pageIndex);
 
 			if(i == 1){
 				$('#previous').prop('disabled', true);
