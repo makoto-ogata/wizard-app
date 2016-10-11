@@ -23,3 +23,10 @@
 .main-sentence > p {
 	line-height: 2;
 }
+
+.footer-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
